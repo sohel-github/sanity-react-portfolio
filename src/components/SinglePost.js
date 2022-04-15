@@ -32,7 +32,7 @@ const SinglePost = () => {
       )
       .then((data) => setSinglePost(data[0]))
       .catch((error) => console.log(error));
-  }, []);
+  }, [slug]);
 
   if (!singlePost)
     return (
