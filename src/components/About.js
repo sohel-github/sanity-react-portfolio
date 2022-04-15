@@ -27,7 +27,7 @@ const About = () => {
       .catch((error) => console.log(error));
   }, []);
 
-  console.log(author);
+  //console.log(author);
 
   if (!author)
     return (
@@ -37,7 +37,7 @@ const About = () => {
     );
   return (
     <main className="relative">
-      <img src={bgImage} alt="About Image" className="absolute w-full" />
+      <img src={bgImage} alt={author.name} className="absolute w-full" />
       <div className="p-10 lg:pt-48 container mx-auto relative">
         <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20">
           <img

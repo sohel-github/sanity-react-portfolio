@@ -6,7 +6,7 @@ const Home = () => {
     <main>
       <img
         src={bgImage}
-        alt="Bg Image"
+        alt={bgImage}
         className="absolute object-cover w-full h-full"
       />
       <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
